@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69856F331D9342B7004B85C1 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69856F321D9342B7004B85C1 /* TestVC.swift */; };
 		69D73E251D93009F0019F9CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E241D93009F0019F9CA /* AppDelegate.swift */; };
 		69D73E271D93009F0019F9CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E261D93009F0019F9CA /* ViewController.swift */; };
 		69D73E2A1D93009F0019F9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D73E281D93009F0019F9CA /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		69D73E2F1D93009F0019F9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D73E2D1D93009F0019F9CA /* LaunchScreen.storyboard */; };
 		69D73E3A1D93009F0019F9CA /* TestsKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E391D93009F0019F9CA /* TestsKeyboardTests.swift */; };
 		69D73E451D93009F0019F9CA /* TestsKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E441D93009F0019F9CA /* TestsKeyboardUITests.swift */; };
+		69D73E541D932BBE0019F9CA /* KeyboardInScrollViewHandlerProtocol2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E531D932BBE0019F9CA /* KeyboardInScrollViewHandlerProtocol2.swift */; };
+		69D73E561D9335680019F9CA /* TestKeyboardHanlderProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E551D9335680019F9CA /* TestKeyboardHanlderProtocolViewController.swift */; };
+		69D73E581D933F040019F9CA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E571D933F040019F9CA /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69856F321D9342B7004B85C1 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		69D73E211D93009E0019F9CA /* TestsKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestsKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D73E241D93009F0019F9CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D73E261D93009F0019F9CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		69D73E401D93009F0019F9CA /* TestsKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D73E441D93009F0019F9CA /* TestsKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsKeyboardUITests.swift; sourceTree = "<group>"; };
 		69D73E461D93009F0019F9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D73E531D932BBE0019F9CA /* KeyboardInScrollViewHandlerProtocol2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInScrollViewHandlerProtocol2.swift; sourceTree = "<group>"; };
+		69D73E551D9335680019F9CA /* TestKeyboardHanlderProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKeyboardHanlderProtocolViewController.swift; sourceTree = "<group>"; };
+		69D73E571D933F040019F9CA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,11 @@
 		69D73E231D93009F0019F9CA /* TestsKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				69D73E521D9300B30019F9CA /* Keyboard */,
 				69D73E241D93009F0019F9CA /* AppDelegate.swift */,
 				69D73E261D93009F0019F9CA /* ViewController.swift */,
+				69D73E551D9335680019F9CA /* TestKeyboardHanlderProtocolViewController.swift */,
+				69856F321D9342B7004B85C1 /* TestVC.swift */,
 				69D73E281D93009F0019F9CA /* Main.storyboard */,
 				69D73E2B1D93009F0019F9CA /* Assets.xcassets */,
 				69D73E2D1D93009F0019F9CA /* LaunchScreen.storyboard */,
@@ -123,6 +134,15 @@
 				69D73E461D93009F0019F9CA /* Info.plist */,
 			);
 			path = TestsKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		69D73E521D9300B30019F9CA /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				69D73E531D932BBE0019F9CA /* KeyboardInScrollViewHandlerProtocol2.swift */,
+				69D73E571D933F040019F9CA /* Test.swift */,
+			);
+			name = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +278,10 @@
 			files = (
 				69D73E271D93009F0019F9CA /* ViewController.swift in Sources */,
 				69D73E251D93009F0019F9CA /* AppDelegate.swift in Sources */,
+				69D73E581D933F040019F9CA /* Test.swift in Sources */,
+				69D73E561D9335680019F9CA /* TestKeyboardHanlderProtocolViewController.swift in Sources */,
+				69856F331D9342B7004B85C1 /* TestVC.swift in Sources */,
+				69D73E541D932BBE0019F9CA /* KeyboardInScrollViewHandlerProtocol2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +506,7 @@
 				69D73E4B1D93009F0019F9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69D73E4C1D93009F0019F9CA /* Build configuration list for PBXNativeTarget "TestsKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				69D73E4E1D93009F0019F9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69D73E4F1D93009F0019F9CA /* Build configuration list for PBXNativeTarget "TestsKeyboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				69D73E511D93009F0019F9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
