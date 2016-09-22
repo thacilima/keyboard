@@ -8,14 +8,12 @@
 
 import UIKit
 
-class TestVC: UIViewController, KeyboardInScrollViewHandlerProtocol, UITextFieldDelegate {
+class TestKeyboardHanlderClassViewController: UIViewController, KeyboardInScrollViewHandlerProtocol, UITextFieldDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     var keyboardInScrollViewHandler: KeyboardInScrollViewHandler?
     
     required init?(coder aDecoder: NSCoder) {
-        
-        
         super.init(coder: aDecoder)
     }
     

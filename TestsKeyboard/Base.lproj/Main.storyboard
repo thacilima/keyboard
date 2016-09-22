@@ -47,16 +47,6 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="B81-ah-Vjh"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-1V-NTm">
-                                                <rect key="frame" x="373" y="37" width="106" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="106" id="mQm-pj-IpO"/>
-                                                </constraints>
-                                                <state key="normal" title="With Protocol 2"/>
-                                                <connections>
-                                                    <segue destination="dWD-zJ-Yau" kind="presentation" id="vFB-Po-mRM"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vl-N4-udp">
                                                 <rect key="frame" x="487" y="37" width="93" height="30"/>
                                                 <constraints>
@@ -67,6 +57,22 @@
                                                     <segue destination="5rj-6b-hRB" kind="presentation" identifier="present" id="GxF-xQ-jyQ"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-1V-NTm">
+                                                <rect key="frame" x="390" y="37" width="73" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="106" id="mQm-pj-IpO"/>
+                                                </constraints>
+                                                <state key="normal" title="With Class"/>
+                                                <connections>
+                                                    <segue destination="dWD-zJ-Yau" kind="presentation" id="vFB-Po-mRM"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHb-nJ-cXT">
+                                                <rect key="frame" x="230" y="8" width="140" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -114,12 +120,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="379"/>
+            <point key="canvasLocation" x="86" y="358"/>
         </scene>
-        <!--TestVC-->
+        <!--Test Keyboard Hanlder Class View Controller-->
         <scene sceneID="sma-v2-Fxx">
             <objects>
-                <viewController id="dWD-zJ-Yau" customClass="TestVC" customModule="TestsKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dWD-zJ-Yau" customClass="TestKeyboardHanlderClassViewController" customModule="TestsKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L6S-Mn-w2L"/>
                         <viewControllerLayoutGuide type="bottom" id="asn-28-kXY"/>
@@ -168,6 +174,12 @@
                                                     <segue destination="mkp-MV-0BD" kind="unwind" unwindAction="unwindToMainViewController:" id="ihm-3C-m1Q"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDx-f4-E2N">
+                                                <rect key="frame" x="266" y="12" width="69" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -206,7 +218,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="scrollView" destination="aGY-Y4-CNd" id="Ing-22-Rau"/>
+                        <outlet property="scrollView" destination="aGY-Y4-CNd" id="MpU-zq-xCy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYS-ah-gsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,6 +278,12 @@
                                                     <outlet property="delegate" destination="5rj-6b-hRB" id="e1A-WH-YYn"/>
                                                 </connections>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On Protocol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIt-Nw-dh2">
+                                                <rect key="frame" x="255" y="8" width="91" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -308,7 +326,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L4-YP-DkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="owC-Kf-WxP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="815" y="723"/>
+            <point key="canvasLocation" x="802" y="721"/>
         </scene>
     </scenes>
 </document>

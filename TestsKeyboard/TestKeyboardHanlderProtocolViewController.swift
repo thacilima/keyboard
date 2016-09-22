@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TestKeyboardHanlderProtocolViewController: UIViewController, KeyboardInScrollViewHandlerProtocol2, UITextFieldDelegate {
+class TestKeyboardHanlderProtocolViewController: UIViewController, KeyboardHandlerWithScrollViewProtocol, UITextFieldDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var keyboardInScrollViewHandlerData: KeyboardInScrollViewHandlerData?
+    var keyboardInScrollViewHandlerData: KeyboardHandlerWithScrollViewInProtocolData?
     
     override func viewDidLoad() {
         super.viewDidLoad()

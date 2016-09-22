@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct KeyboardHandlerVC {
+struct KeyboardHandlerWithScrollViewInViewControllerData {
     
     var oldContentInset: UIEdgeInsets?
     var oldIndicatorInsets: UIEdgeInsets?
@@ -20,14 +20,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var keyboardHandler = KeyboardHandlerVC()
+    var keyboardHandler = KeyboardHandlerWithScrollViewInViewControllerData()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardDidShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
 
     func keyboardShow(n: NSNotification) {

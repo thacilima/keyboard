@@ -8,6 +8,18 @@
 
 import UIKit
 
+struct KeyboardInScrollViewHandlerData {
+    var beforeKeyboardShownContentInset: UIEdgeInsets
+    var beforeKeyboardShownIndicatorInsets: UIEdgeInsets
+    var beforeKeyboardShownContentOffset: CGPoint
+}
+
+protocol KeyboardInScrollViewHandlerProtocol {
+    
+    var scrollView: UIScrollView! { get set }
+    var keyboardInScrollViewHandler: KeyboardInScrollViewHandler? { get set }
+}
+
 class KeyboardInScrollViewHandler {
     
     let scrollView: UIScrollView
@@ -64,10 +76,4 @@ class KeyboardInScrollViewHandler {
         }
         
     }
-}
-
-protocol KeyboardInScrollViewHandlerProtocol {
-    
-    var scrollView: UIScrollView! { get set }
-    var keyboardInScrollViewHandler: KeyboardInScrollViewHandler? { get set }
 }
